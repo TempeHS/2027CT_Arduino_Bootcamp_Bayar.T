@@ -30,11 +30,17 @@
 
 // The setup function runs once when you press reset or power the board
 void setup() {
-  Serial.begin(9600);
-  Serial.print("Hello");
+  Serial.begin(115200);
+  Serial.println("Hello");
 }
 
 // The loop function runs over and over again forever
 void loop() {
+  Serial.println("...your own message here...");
+  delay(1000);
+}
 
+void loop() {
+  Serial.println("...your own message here...");
+  delay(1000);
 }
