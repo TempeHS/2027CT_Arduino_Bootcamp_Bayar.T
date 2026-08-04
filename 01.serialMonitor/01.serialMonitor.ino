@@ -36,11 +36,8 @@ void setup() {
 
 // The loop function runs over and over again forever
 void loop() {
-  Serial.println("...your own message here...");
+  Serial.println("koko");
   delay(1000);
 }
 
-void loop() {
-  Serial.println("...your own message here...");
-  delay(1000);
-}
+
