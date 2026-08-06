@@ -40,10 +40,16 @@
 const int BUTTON_PIN = 4;  // Grove Button on D4
 const int LED_PIN = 6;     // Grove LED on D6
 
-void setup() {
 
+
+void setup() {
+  pinMode(LED_PIN, OUTPUT);     // this pin will SEND signals
 }
 
 void loop() {
-
+  digitalWrite(LED_PIN, HIGH);  // 5 volts on the pin: LED on
+  delay(1000);
+  digitalWrite(LED_PIN, LOW);   // 0 volts: LED off
+  delay(1000);
 }
+
