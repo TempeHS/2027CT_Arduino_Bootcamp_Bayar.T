@@ -39,6 +39,7 @@ const int BUZZER_PIN = 5;  // Grove Buzzer on D5
 const int LED_PIN = 6;     // Grove LED on D6
 
 void setup() {
+  randomSeed(analogRead(A1));   // A1 must be left unconnected
   pinMode(LED_PIN, OUTPUT);
   pinMode(BUTTON_PIN, INPUT);
   pinMode(BUZZER_PIN, OUTPUT);
@@ -46,6 +47,7 @@ void setup() {
   for (int i = 0; i < 5; i++) {
     Serial.println(random(1, 7));   // dice roll: 1 to 6
   }
+}
 
 
 
