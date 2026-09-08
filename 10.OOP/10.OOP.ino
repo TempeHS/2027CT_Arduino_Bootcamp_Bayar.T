@@ -20,10 +20,14 @@
     https://youtu.be/cUVryWbVkXk
 */
 
-class Led {
+class Button {
   private:
-    int pin;          // properties: data each Led remembers
-    bool isOn;
+    int pin;
+  public:
+    Button(int buttonPin);   // store the pin
+    void begin();            // pinMode INPUT
+    bool isPressed();        // true while held (Grove button reads HIGH pressed)
+};
 
   public:
     Led(int ledPin) {  // constructor: runs when an object is created
